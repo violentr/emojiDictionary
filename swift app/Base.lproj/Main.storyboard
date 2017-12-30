@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="swift_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1071.2" y="53.523238380809602"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="DV1-lJ-hPM">
             <objects>
-                <viewController id="rad-A1-q2Y" sceneMemberID="viewController">
+                <viewController id="rad-A1-q2Y" customClass="DefinitionViewController" customModule="swift_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VIX-5u-feS"/>
                         <viewControllerLayoutGuide type="bottom" id="2pF-zk-ks6"/>
@@ -57,13 +57,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⛪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai4-Em-XgT">
-                                <rect key="frame" x="93" y="60" width="190" height="209"/>
+                                <rect key="frame" x="93" y="104" width="190" height="209"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="175"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-bc-d5P">
-                                <rect key="frame" x="110" y="319" width="155" height="21"/>
+                                <rect key="frame" x="110" y="363" width="155" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +77,9 @@
                             <constraint firstItem="Ai4-Em-XgT" firstAttribute="top" secondItem="VIX-5u-feS" secondAttribute="bottom" constant="40" id="msx-18-EvO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiPicture" destination="Ai4-Em-XgT" id="vk6-pK-sKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS9-da-dZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
